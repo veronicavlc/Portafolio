@@ -1,0 +1,262 @@
+.bg-portafolio{
+    background-color: #FFE3E3;
+}
+/* .bg-portafolio{
+    background: transparent;
+} */
+
+.bg-portafolio ul li a{
+    color: rgb(12, 115, 117);
+}
+/* Al pasar po encima de la letra con el hover se colocara negro */
+.bg-portafolio ul li a:hover{
+    color: black;
+}
+
+#hero{
+    /* margen superior */
+    padding-top: 120px;
+    /* margen inferior */
+    padding-bottom: 80px;
+    background-color: #FFE3E3;
+}
+
+/* titulo tamaño y color */
+#hero h1{
+    font-family: 'Birthstone',sans-serif;
+    color: rgb(10, 89, 120);
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'Birthstone', cursive
+    /*para las mayusculas: text-transform: uppercase; */
+}
+
+/* texto tamaño y color */
+#hero p{
+    color: rgb(1, 1, 1);
+    font-size: 20px;
+}
+
+header{
+    position: relative;
+}
+   
+
+#Bienvenida{
+    width: 100px;
+    position: relative;
+    padding-bottom: 80px;
+
+}
+
+#Datos .cuadrodatos {
+    width: 100%;
+    height: 400px;
+    background-color: #FFE3E3;
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#Datos .cuadrodatos h2 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-bottom: 10%;
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+    
+}
+
+#form {
+    width: 100%;
+    height: 700px;
+    background-color: #FFE3E3;
+    text-align: center;
+}
+footer h2{
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+}
+
+#form a{
+    background-color: #e9c4c4b8;
+    padding: 15px;
+    /* quital la linea de abajo del texto */
+    text-decoration: none;  
+    color: black;
+    border-radius: 5px;
+}
+
+#form .Contactoform{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+#Experiencia {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #FFE3E3;
+    text-align: center;
+ 
+}
+
+
+#Estudios .ExpEstudios {
+    width: 100%;
+    height: 400px;
+    background-color: #FFE3E3;
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#Experiencia h2 {
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+}
+
+#Experiencia h3{
+    font-family: 'Bitter', serif;
+}
+
+#Estudios h2 {
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+}
+#Estudios h3 {
+    font-family: 'Birthstone', cursive;
+    font-size: 50px;
+}
+#Estudios .cardExp{
+    padding: 40px 10px;
+    border: 1px solid;
+    border-radius: 21px;
+    width: 30%;
+    margin-left: 32px
+}
+
+#Estudios a{
+    background-color: #e9c4c4b8;
+    padding: 7px;
+    /* quital la linea de abajo del texto */
+    text-decoration: none;  
+    color: black;
+    border-radius: 5px;
+}
+
+
+#Experiencia .cardExp{  
+    padding: 40px 10px;
+    border: 1px solid;
+    border-radius: 21px;
+    width: 30%;
+    margin-left: 32px;
+}
+
+input{
+    padding: 20px 5px;
+    border: 1px solid;
+    border-radius: 12px;
+    width: 10%;
+    height: 10%;
+    margin-left: 10px;
+}
+
+/* pseudo elementos esperamos por agregar la position: relative;al contenedorpadre eneste casp header */
+header{
+    position: relative;
+}
+/* Al selector padre de agregamos::after */
+
+
+header::before{
+        /* El pseudo elemento siempre debe tener una position: relative; un content vacio, dimenciones, fondo-imagnen y color- y posiciones */
+        position: absolute;
+        content: "";
+        width: 160px;
+        height: 120px;
+        background: url(../img/Flowerheder.png) no-repeat;
+        bottom: 5%;
+        /* background-color: bisque; */
+        top: 0;
+        right: 2px;
+        z-index: 9999;
+        /* font-display: ; para ocultar elmentos  */    
+
+
+}
+
+
+#Datos .cuadrodatos::after{
+    /* El pseudo elemento siempre debe tener una position: relative; un content vacio, dimenciones, fondo-imagnen y color- y posiciones */
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 60px;
+    background: url(../img/Group\ 1.png) no-repeat;
+    /* background-color: bisque; */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* font-display: ; para ocultar elmentos  */
+}
+
+
+#Datos .cuadrodatos::before{
+    /* El pseudo elemento siempre debe tener una position: relative; un content vacio, dimenciones, fondo-imagnen y color- y posiciones */
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 60px;
+    background: url(../img/Group\ 2.png) no-repeat;
+    bottom: 5%;
+    /* background-color: bisque; */
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    /* font-display: ; para ocultar elmentos  */
+}
+
+#Estudios{ 
+    position: relative;
+}
+
+#Estudios::after{
+    /* El pseudo elemento siempre debe tener una position: relative; un content vacio, dimenciones, fondo-imagnen y color- y posiciones */
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 270px;
+    background: url(../img/Elementocirculo\ left.png) no-repeat;
+    /* background-color: bisque; */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* font-display: ; para ocultar elmentos  */
+}
+
+#Estudios::before{
+    /* El pseudo elemento siempre debe tener una position: relative; un content vacio, dimenciones, fondo-imagnen y color- y posiciones */
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 270px;
+    background: url(../img/Elementocirculoright.png) no-repeat;
+    bottom: 5%;
+    /* background-color: bisque; */
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#whatsapp{
+    position: fixed;
+    right:10px;
+    bottom: 10%;
+    z-index: 9999;
+}
